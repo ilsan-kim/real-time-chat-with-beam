@@ -1,21 +1,15 @@
-# Chatapp
+# Super Simple Real-Time TCP Chat Server built on BEAM
 
-**TODO: Add description**
+## What is it?
+Connect multiple clients via TCP and Chat in real-time. Messages are instantly broadcast to all connected clients.
 
-## Installation
+## How to use it?
+```bash
+# Run Server
+mix deps.get
+mix run --no-halt
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `chatapp` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:chatapp, "~> 0.1.0"}
-  ]
-end
+# Connect to Server
+telnet localhost 4040
+nc localhost 4040
 ```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/chatapp>.
-
